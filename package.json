@@ -1,29 +1,28 @@
 {
-  "name": "passport-local",
-  "version": "0.1.6",
-  "description": "Local username and password authentication strategy for Passport.",
+  "name": "passport-ebay",
+  "version": "0.1.0",
+  "description": "ebay authentication strategy for Passport.",
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Craig Edmunds",
+    "email": "craig.edmunds@gmail.com",
+    "url": "http://linkedin.com/in/craigedmunds"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-local.git"
+    "url": "git://github.com/craigedmunds/passport-ebay.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-local/issues"
+    "url": "http://github.com/raigedmunds/passport-ebay/issues"
   },
-  "main": "./lib/passport-local",
+  "main": "./lib/passport-ebay",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport": "~0.1.1"
+    "passport": "~0.1.1",
+    "debug": "*",
+    "ebay-api" : "git://github.com/craigedmunds/nodejs-ebay-api.git"
   },
-  "devDependencies": {
-    "vows": "0.6.x"
-  },
-  "scripts": {
-    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+  "devDependencies" : {
+    "jasmine-node": "*"
   },
   "engines": {
     "node": ">= 0.4.0"
@@ -36,16 +35,10 @@
   ],
   "keywords": [
     "passport",
-    "local",
+    "ebay",
     "auth",
     "authn",
     "authentication"
   ],
-  "readme": "ERROR: No README data found!",
-  "_id": "passport-local@0.1.6",
-  "dist": {
-    "shasum": "409fcfb7fa959682177654e56a47935f109b5c67"
-  },
-  "_from": "passport-local@~0.1.6",
-  "_resolved": "https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz"
+  "readme": "ERROR: No README data found!"
 }
